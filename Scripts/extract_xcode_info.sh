@@ -80,6 +80,40 @@ finalize_session() {
     echo "Sie können die Informationen nun mit './xcode-ref.sh process-session $session_doc' ins Referenz-Repository übernehmen."
 }
 
+# Funktion: Komplette Chat-Extraktion (für alte Chats)
+extract() {
+    echo "Starte vollständige Chat-Extraktion..."
+    
+    # Temporäres Verzeichnis für diese Extraktion
+    local extract_dir="$HERO8_DIR/ChatExtracts/$(date +%Y%m%d_%H%M%S)"
+    mkdir -p "$extract_dir"
+    
+    # Erstelle separate Dateien für verschiedene Informationstypen
+    echo "# Xcode Chat-Extraktion" > "$extract_dir/README.md"
+    echo "Extrahiert am: $(date)" >> "$extract_dir/README.md"
+    echo "" >> "$extract_dir/README.md"
+    
+    # Speichere den aktuellen Chat-Verlauf (sollte von der KI gefüllt werden)
+    echo "# Screenshots" > "$extract_dir/screenshots.md"
+    echo "Liste aller Screenshots mit Beschreibungen" >> "$extract_dir/screenshots.md"
+    echo "" >> "$extract_dir/screenshots.md"
+    
+    echo "# Features" > "$extract_dir/features.md"
+    echo "Neue Xcode 16.3 Features und Funktionen" >> "$extract_dir/features.md"
+    echo "" >> "$extract_dir/features.md"
+    
+    echo "# Build Settings" > "$extract_dir/settings.md"
+    echo "Build Settings und Konfigurationsdetails" >> "$extract_dir/settings.md"
+    echo "" >> "$extract_dir/settings.md"
+    
+    echo "# Issues und Lösungen" > "$extract_dir/issues.md"
+    echo "Dokumentierte Probleme und deren Lösungen" >> "$extract_dir/issues.md"
+    echo "" >> "$extract_dir/issues.md"
+    
+    echo "Extraktionsverzeichnis vorbereitet: $extract_dir"
+    echo "Die KI sollte nun alle relevanten Informationen aus diesem Chat in die Dateien schreiben."
+}
+
 # Hauptprogramm
 case "$1" in
     "mark")
@@ -88,11 +122,15 @@ case "$1" in
     "finalize")
         finalize_session
         ;;
+    "extract")
+        extract
+        ;;
     *)
         echo "Verwendung für KI-Sessions:"
         echo "  $0 mark screenshot <referenz> <beschreibung>"
         echo "  $0 mark feature <inhalt> <beschreibung>"
         echo "  $0 mark issue <inhalt> <beschreibung>"
         echo "  $0 finalize"
+        echo "  $0 extract"
         ;;
 esac
