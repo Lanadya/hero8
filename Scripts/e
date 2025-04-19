@@ -14,4 +14,7 @@ Format:
 - settings.md: Build-Settings und Konfiguration
 - issues.md: Probleme und Lösungen
 
+Wichtig: Verwende textuelle Referenzen, keine Bild-Links.
+Statt ![Bild](pfad) nutze **Referenz**: [Beschreibung].
+
 Schreibe in Markdown, nutze MCP."

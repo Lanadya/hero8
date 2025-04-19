@@ -53,7 +53,7 @@ finalize_session() {
     grep "^XCODE_SCREENSHOT" "$SESSION_DIR/current_session.log" | while IFS='|' read -r type ts desc content; do
         echo "- [$desc]" >> "$session_doc"
         echo "  Zeitpunkt: $ts" >> "$session_doc"
-        echo "  Referenz: $content" >> "$session_doc"
+        echo "  **Referenz**: [$content]" >> "$session_doc"
         echo "" >> "$session_doc"
     done
     
