@@ -20,6 +20,23 @@ check_hero8_dir() {
     fi
 }
 
+# Funktion: Änderungen pushen
+push_changes() {
+    local message=$1
+    
+    if [ -z "$message" ]; then
+        echo "Verwendung: $0 push <commit-nachricht>"
+        exit 1
+    fi
+    
+    (
+        cd "$XCODE_REF_DIR"
+        git add .
+        git commit -m "$message"
+        git push
+    )
+}
+
 # Funktion: Screenshot hinzufügen
 add_screenshot() {
     local category=$1
@@ -97,21 +114,67 @@ show_status() {
     find "$XCODE_REF_DIR/versions/$CURRENT_VERSION/docs" -type f -name "*.md" | sed "s|$XCODE_REF_DIR/||g"
 }
 
-# Funktion: Änderungen pushen
-push_changes() {
-    local message=$1
+# Funktion: Chat-Session verarbeiten
+process_session() {
+    local session_file=$1
     
-    if [ -z "$message" ]; then
-        echo "Verwendung: $0 push <commit-nachricht>"
+    if [ -z "$session_file" ] || [ ! -f "$session_file" ]; then
+        echo "Verwendung: $0 process-session <session-datei>"
         exit 1
     fi
     
-    (
-        cd "$XCODE_REF_DIR"
-        git add .
-        git commit -m "$message"
-        git push
-    )
+    echo "Verarbeite Session-Datei: $session_file"
+    
+    # Extrahiere Datum aus Dateiname
+    session_date=$(basename "$session_file" | sed 's/XCODE_SESSION_\(.*\)\.md/\1/')
+    
+    # Erstelle Zielverzeichnis für diese Session
+    session_dir="$XCODE_REF_DIR/versions/$CURRENT_VERSION/sessions/${session_date}"
+    mkdir -p "$session_dir"
+    
+    # Kopiere Session-Zusammenfassung
+    cp "$session_file" "$session_dir/summary.md"
+    
+    # Erstelle Index-Eintrag für diese Session
+    index_file="$XCODE_REF_DIR/versions/$CURRENT_VERSION/sessions/INDEX.md"
+    if [ ! -f "$index_file" ]; then
+        echo "# Session Index" > "$index_file"
+        echo "" >> "$index_file"
+    fi
+    
+    echo "- [${session_date}](${session_date}/summary.md) - $(head -n 1 "$session_file" | sed 's/# //')" >> "$index_file"
+    
+    echo "Session erfolgreich in Referenz-Repository übernommen."
+    echo "Sie können die Änderungen mit './xcode-ref.sh push \"Session ${session_date} hinzugefügt\"' pushen."
+}
+
+# Funktion: Neuen Screenshot-Verweis erstellen
+create_screenshot_reference() {
+    local description=$1
+    local timestamp=$(date "+%Y-%m-%d_%H-%M-%S")
+    local reference="screenshot_${timestamp}"
+    
+    if [ -z "$description" ]; then
+        echo "Verwendung: $0 create-screenshot-ref <beschreibung>"
+        exit 1
+    fi
+    
+    echo "SCREENSHOT_REF|$reference|$description" >> "$HERO8_DIR/.xcode-session/current_session.log"
+    echo "Screenshot-Referenz erstellt: $reference"
+    echo "Bitte fügen Sie den Screenshot im Chat ein und referenzieren Sie ihn mit: $reference"
+}
+
+# Funktion: Feature markieren
+mark_feature() {
+    local description=$1
+    local content=$2
+    
+    if [ -z "$description" ] || [ -z "$content" ]; then
+        echo "Verwendung: $0 mark-feature <beschreibung> <inhalt>"
+        exit 1
+    fi
+    
+    "$HERO8_DIR/Scripts/extract_xcode_info.sh" mark feature "$content" "$description"
 }
 
 # Hauptprogramm
@@ -130,6 +193,15 @@ case "$1" in
     "status")
         show_status
         ;;
+    "process-session")
+        process_session "$2"
+        ;;
+    "create-screenshot-ref")
+        create_screenshot_reference "$2"
+        ;;
+    "mark-feature")
+        mark_feature "$2" "$3"
+        ;;
     "push")
         push_changes "$2"
         ;;
@@ -137,6 +209,9 @@ case "$1" in
         echo "Xcode Reference Verwaltung aus hero8"
         echo ""
         echo "Verfügbare Befehle:"
+        echo "  process-session <datei>                 - Chat-Session verarbeiten"
+        echo "  create-screenshot-ref <beschreibung>    - Screenshot-Referenz erstellen"
+        echo "  mark-feature <beschreibung> <inhalt>    - Feature aus Chat markieren"
         echo "  add-screenshot <kategorie> <dateiname>  - Screenshot hinzufügen"
         echo "  add-docs <pfad> <dateiname>            - Dokumentation hinzufügen"
         echo "  add-version <version>                  - Neue Version einrichten"
