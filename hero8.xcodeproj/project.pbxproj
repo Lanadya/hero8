@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AFAB95012DB37DE2000A335E /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */; };
+		AFAB950B2DB37DE2000A335E /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */; };
+		AFAB950C2DB37DE2000A335E /* CoreDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFAB952E2DB37E15000A335E /* CoreInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */; };
+		AFAB95382DB37E16000A335E /* CoreInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */; };
+		AFAB95392DB37E16000A335E /* CoreInfrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFAB95612DB37E3F000A335E /* HeroCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; };
+		AFAB956B2DB37E3F000A335E /* HeroCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; };
+		AFAB956C2DB37E3F000A335E /* HeroCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AF0017D62DB2B48D00112FA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,12 +33,97 @@
 			remoteGlobalIDString = AF0017C62DB2B48C00112FA4;
 			remoteInfo = hero8;
 		};
+		AFAB95022DB37DE2000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB94F52DB37DE2000A335E;
+			remoteInfo = CoreDomain;
+		};
+		AFAB95042DB37DE2000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0017C62DB2B48C00112FA4;
+			remoteInfo = hero8;
+		};
+		AFAB95092DB37DE2000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB94F52DB37DE2000A335E;
+			remoteInfo = CoreDomain;
+		};
+		AFAB952F2DB37E15000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB95222DB37E15000A335E;
+			remoteInfo = CoreInfrastructure;
+		};
+		AFAB95312DB37E16000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0017C62DB2B48C00112FA4;
+			remoteInfo = hero8;
+		};
+		AFAB95362DB37E16000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB95222DB37E15000A335E;
+			remoteInfo = CoreInfrastructure;
+		};
+		AFAB95622DB37E3F000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB95552DB37E3F000A335E;
+			remoteInfo = HeroCoreData;
+		};
+		AFAB95642DB37E3F000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF0017C62DB2B48C00112FA4;
+			remoteInfo = hero8;
+		};
+		AFAB95692DB37E3F000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB95552DB37E3F000A335E;
+			remoteInfo = HeroCoreData;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AFAB95102DB37DE2000A335E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AFAB95392DB37E16000A335E /* CoreInfrastructure.framework in Embed Frameworks */,
+				AFAB950C2DB37DE2000A335E /* CoreDomain.framework in Embed Frameworks */,
+				AFAB956C2DB37E3F000A335E /* HeroCoreData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AF0017C72DB2B48C00112FA4 /* hero8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hero8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0017D52DB2B48D00112FA4 /* hero8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hero8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0017DF2DB2B48D00112FA4 /* hero8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hero8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB94F62DB37DE2000A335E /* CoreDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB95002DB37DE2000A335E /* CoreDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreInfrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB952D2DB37E15000A335E /* CoreInfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreInfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB95562DB37E3F000A335E /* HeroCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HeroCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFAB95602DB37E3F000A335E /* HeroCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -45,6 +142,36 @@
 			path = hero8UITests;
 			sourceTree = "<group>";
 		};
+		AFAB94F72DB37DE2000A335E /* CoreDomain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreDomain;
+			sourceTree = "<group>";
+		};
+		AFAB95062DB37DE2000A335E /* CoreDomainTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreDomainTests;
+			sourceTree = "<group>";
+		};
+		AFAB95242DB37E15000A335E /* CoreInfrastructure */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreInfrastructure;
+			sourceTree = "<group>";
+		};
+		AFAB95332DB37E16000A335E /* CoreInfrastructureTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoreInfrastructureTests;
+			sourceTree = "<group>";
+		};
+		AFAB95572DB37E3F000A335E /* HeroCoreData */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HeroCoreData;
+			sourceTree = "<group>";
+		};
+		AFAB95662DB37E3F000A335E /* HeroCoreDataTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HeroCoreDataTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +179,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB95382DB37E16000A335E /* CoreInfrastructure.framework in Frameworks */,
+				AFAB950B2DB37DE2000A335E /* CoreDomain.framework in Frameworks */,
+				AFAB956B2DB37E3F000A335E /* HeroCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +199,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFAB94F32DB37DE2000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB94FD2DB37DE2000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAB95012DB37DE2000A335E /* CoreDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95202DB37E15000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB952A2DB37E15000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAB952E2DB37E15000A335E /* CoreInfrastructure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95532DB37E3F000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB955D2DB37E3F000A335E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFAB95612DB37E3F000A335E /* HeroCoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +253,12 @@
 				AF0017C92DB2B48C00112FA4 /* hero8 */,
 				AF0017D82DB2B48D00112FA4 /* hero8Tests */,
 				AF0017E22DB2B48D00112FA4 /* hero8UITests */,
+				AFAB94F72DB37DE2000A335E /* CoreDomain */,
+				AFAB95062DB37DE2000A335E /* CoreDomainTests */,
+				AFAB95242DB37E15000A335E /* CoreInfrastructure */,
+				AFAB95332DB37E16000A335E /* CoreInfrastructureTests */,
+				AFAB95572DB37E3F000A335E /* HeroCoreData */,
+				AFAB95662DB37E3F000A335E /* HeroCoreDataTests */,
 				AF0017C82DB2B48C00112FA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,11 +269,41 @@
 				AF0017C72DB2B48C00112FA4 /* hero8.app */,
 				AF0017D52DB2B48D00112FA4 /* hero8Tests.xctest */,
 				AF0017DF2DB2B48D00112FA4 /* hero8UITests.xctest */,
+				AFAB94F62DB37DE2000A335E /* CoreDomain.framework */,
+				AFAB95002DB37DE2000A335E /* CoreDomainTests.xctest */,
+				AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */,
+				AFAB952D2DB37E15000A335E /* CoreInfrastructureTests.xctest */,
+				AFAB95562DB37E3F000A335E /* HeroCoreData.framework */,
+				AFAB95602DB37E3F000A335E /* HeroCoreDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AFAB94F12DB37DE2000A335E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB951E2DB37E15000A335E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95512DB37E3F000A335E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		AF0017C62DB2B48C00112FA4 /* hero8 */ = {
@@ -102,10 +313,14 @@
 				AF0017C32DB2B48C00112FA4 /* Sources */,
 				AF0017C42DB2B48C00112FA4 /* Frameworks */,
 				AF0017C52DB2B48C00112FA4 /* Resources */,
+				AFAB95102DB37DE2000A335E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AFAB950A2DB37DE2000A335E /* PBXTargetDependency */,
+				AFAB95372DB37E16000A335E /* PBXTargetDependency */,
+				AFAB956A2DB37E3F000A335E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AF0017C92DB2B48C00112FA4 /* hero8 */,
@@ -163,6 +378,147 @@
 			productReference = AF0017DF2DB2B48D00112FA4 /* hero8UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AFAB94F52DB37DE2000A335E /* CoreDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB950D2DB37DE2000A335E /* Build configuration list for PBXNativeTarget "CoreDomain" */;
+			buildPhases = (
+				AFAB94F12DB37DE2000A335E /* Headers */,
+				AFAB94F22DB37DE2000A335E /* Sources */,
+				AFAB94F32DB37DE2000A335E /* Frameworks */,
+				AFAB94F42DB37DE2000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB94F72DB37DE2000A335E /* CoreDomain */,
+			);
+			name = CoreDomain;
+			packageProductDependencies = (
+			);
+			productName = CoreDomain;
+			productReference = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFAB94FF2DB37DE2000A335E /* CoreDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB95112DB37DE2000A335E /* Build configuration list for PBXNativeTarget "CoreDomainTests" */;
+			buildPhases = (
+				AFAB94FC2DB37DE2000A335E /* Sources */,
+				AFAB94FD2DB37DE2000A335E /* Frameworks */,
+				AFAB94FE2DB37DE2000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFAB95032DB37DE2000A335E /* PBXTargetDependency */,
+				AFAB95052DB37DE2000A335E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB95062DB37DE2000A335E /* CoreDomainTests */,
+			);
+			name = CoreDomainTests;
+			packageProductDependencies = (
+			);
+			productName = CoreDomainTests;
+			productReference = AFAB95002DB37DE2000A335E /* CoreDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFAB95222DB37E15000A335E /* CoreInfrastructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB953A2DB37E16000A335E /* Build configuration list for PBXNativeTarget "CoreInfrastructure" */;
+			buildPhases = (
+				AFAB951E2DB37E15000A335E /* Headers */,
+				AFAB951F2DB37E15000A335E /* Sources */,
+				AFAB95202DB37E15000A335E /* Frameworks */,
+				AFAB95212DB37E15000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB95242DB37E15000A335E /* CoreInfrastructure */,
+			);
+			name = CoreInfrastructure;
+			packageProductDependencies = (
+			);
+			productName = CoreInfrastructure;
+			productReference = AFAB95232DB37E15000A335E /* CoreInfrastructure.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFAB952C2DB37E15000A335E /* CoreInfrastructureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB953D2DB37E16000A335E /* Build configuration list for PBXNativeTarget "CoreInfrastructureTests" */;
+			buildPhases = (
+				AFAB95292DB37E15000A335E /* Sources */,
+				AFAB952A2DB37E15000A335E /* Frameworks */,
+				AFAB952B2DB37E15000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFAB95302DB37E15000A335E /* PBXTargetDependency */,
+				AFAB95322DB37E16000A335E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB95332DB37E16000A335E /* CoreInfrastructureTests */,
+			);
+			name = CoreInfrastructureTests;
+			packageProductDependencies = (
+			);
+			productName = CoreInfrastructureTests;
+			productReference = AFAB952D2DB37E15000A335E /* CoreInfrastructureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AFAB95552DB37E3F000A335E /* HeroCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB956D2DB37E3F000A335E /* Build configuration list for PBXNativeTarget "HeroCoreData" */;
+			buildPhases = (
+				AFAB95512DB37E3F000A335E /* Headers */,
+				AFAB95522DB37E3F000A335E /* Sources */,
+				AFAB95532DB37E3F000A335E /* Frameworks */,
+				AFAB95542DB37E3F000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB95572DB37E3F000A335E /* HeroCoreData */,
+			);
+			name = HeroCoreData;
+			packageProductDependencies = (
+			);
+			productName = HeroCoreData;
+			productReference = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFAB955F2DB37E3F000A335E /* HeroCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFAB95702DB37E3F000A335E /* Build configuration list for PBXNativeTarget "HeroCoreDataTests" */;
+			buildPhases = (
+				AFAB955C2DB37E3F000A335E /* Sources */,
+				AFAB955D2DB37E3F000A335E /* Frameworks */,
+				AFAB955E2DB37E3F000A335E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFAB95632DB37E3F000A335E /* PBXTargetDependency */,
+				AFAB95652DB37E3F000A335E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AFAB95662DB37E3F000A335E /* HeroCoreDataTests */,
+			);
+			name = HeroCoreDataTests;
+			packageProductDependencies = (
+			);
+			productName = HeroCoreDataTests;
+			productReference = AFAB95602DB37E3F000A335E /* HeroCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +537,27 @@
 						TestTargetID = AF0017C62DB2B48C00112FA4;
 					};
 					AF0017DE2DB2B48D00112FA4 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AF0017C62DB2B48C00112FA4;
+					};
+					AFAB94F52DB37DE2000A335E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					AFAB94FF2DB37DE2000A335E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AF0017C62DB2B48C00112FA4;
+					};
+					AFAB95222DB37E15000A335E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					AFAB952C2DB37E15000A335E = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = AF0017C62DB2B48C00112FA4;
+					};
+					AFAB95552DB37E3F000A335E = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					AFAB955F2DB37E3F000A335E = {
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = AF0017C62DB2B48C00112FA4;
 					};
@@ -203,6 +580,12 @@
 				AF0017C62DB2B48C00112FA4 /* hero8 */,
 				AF0017D42DB2B48D00112FA4 /* hero8Tests */,
 				AF0017DE2DB2B48D00112FA4 /* hero8UITests */,
+				AFAB94F52DB37DE2000A335E /* CoreDomain */,
+				AFAB94FF2DB37DE2000A335E /* CoreDomainTests */,
+				AFAB95222DB37E15000A335E /* CoreInfrastructure */,
+				AFAB952C2DB37E15000A335E /* CoreInfrastructureTests */,
+				AFAB95552DB37E3F000A335E /* HeroCoreData */,
+				AFAB955F2DB37E3F000A335E /* HeroCoreDataTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +606,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AF0017DD2DB2B48D00112FA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB94F42DB37DE2000A335E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB94FE2DB37DE2000A335E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95212DB37E15000A335E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB952B2DB37E15000A335E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95542DB37E3F000A335E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB955E2DB37E3F000A335E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +678,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFAB94F22DB37DE2000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB94FC2DB37DE2000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB951F2DB37E15000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95292DB37E15000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB95522DB37E3F000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFAB955C2DB37E3F000A335E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +732,51 @@
 			isa = PBXTargetDependency;
 			target = AF0017C62DB2B48C00112FA4 /* hero8 */;
 			targetProxy = AF0017E02DB2B48D00112FA4 /* PBXContainerItemProxy */;
+		};
+		AFAB95032DB37DE2000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB94F52DB37DE2000A335E /* CoreDomain */;
+			targetProxy = AFAB95022DB37DE2000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95052DB37DE2000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0017C62DB2B48C00112FA4 /* hero8 */;
+			targetProxy = AFAB95042DB37DE2000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB950A2DB37DE2000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB94F52DB37DE2000A335E /* CoreDomain */;
+			targetProxy = AFAB95092DB37DE2000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95302DB37E15000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB95222DB37E15000A335E /* CoreInfrastructure */;
+			targetProxy = AFAB952F2DB37E15000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95322DB37E16000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0017C62DB2B48C00112FA4 /* hero8 */;
+			targetProxy = AFAB95312DB37E16000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95372DB37E16000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB95222DB37E15000A335E /* CoreInfrastructure */;
+			targetProxy = AFAB95362DB37E16000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95632DB37E3F000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB95552DB37E3F000A335E /* HeroCoreData */;
+			targetProxy = AFAB95622DB37E3F000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95652DB37E3F000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF0017C62DB2B48C00112FA4 /* hero8 */;
+			targetProxy = AFAB95642DB37E3F000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB956A2DB37E3F000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB95552DB37E3F000A335E /* HeroCoreData */;
+			targetProxy = AFAB95692DB37E3F000A335E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +1065,408 @@
 			};
 			name = Release;
 		};
+		AFAB950E2DB37DE2000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB950F2DB37DE2000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		AFAB95122DB37DE2000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB95132DB37DE2000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		AFAB953B2DB37E16000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreInfrastructure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB953C2DB37E16000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreInfrastructure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		AFAB953E2DB37E16000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreInfrastructureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB953F2DB37E16000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.CoreInfrastructureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		AFAB956E2DB37E3F000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.HeroCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB956F2DB37E3F000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.HeroCoreData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+		AFAB95712DB37E3F000A335E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.HeroCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		AFAB95722DB37E3F000A335E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5ZQ2L7WC24;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teccolino.HeroCoreDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hero8.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hero8";
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +1502,60 @@
 			buildConfigurations = (
 				AF0017F02DB2B48D00112FA4 /* Debug */,
 				AF0017F12DB2B48D00112FA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB950D2DB37DE2000A335E /* Build configuration list for PBXNativeTarget "CoreDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB950E2DB37DE2000A335E /* Debug */,
+				AFAB950F2DB37DE2000A335E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB95112DB37DE2000A335E /* Build configuration list for PBXNativeTarget "CoreDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB95122DB37DE2000A335E /* Debug */,
+				AFAB95132DB37DE2000A335E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB953A2DB37E16000A335E /* Build configuration list for PBXNativeTarget "CoreInfrastructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB953B2DB37E16000A335E /* Debug */,
+				AFAB953C2DB37E16000A335E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB953D2DB37E16000A335E /* Build configuration list for PBXNativeTarget "CoreInfrastructureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB953E2DB37E16000A335E /* Debug */,
+				AFAB953F2DB37E16000A335E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB956D2DB37E3F000A335E /* Build configuration list for PBXNativeTarget "HeroCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB956E2DB37E3F000A335E /* Debug */,
+				AFAB956F2DB37E3F000A335E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFAB95702DB37E3F000A335E /* Build configuration list for PBXNativeTarget "HeroCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFAB95712DB37E3F000A335E /* Debug */,
+				AFAB95722DB37E3F000A335E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
