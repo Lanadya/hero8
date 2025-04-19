@@ -94,3 +94,5 @@ Build-Konfigurationen können inkonsistent sein und zu unerwarteten Verhaltenswe
 - Dokumentation der optimalen Einstellungen für Test-Targets
 - Klare Trennung zwischen Debug- und Release-Konfigurationen
 - Best Practices für Multi-Platform-Support
+
+<!-- Geprüft am 2025-04-19: Alle persönlichen Daten maskiert -->
