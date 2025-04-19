@@ -33,6 +33,13 @@ else
 fi
 echo "" >> "$OUTPUT_FILE"
 
+# Entwicklungsumgebung
+echo "### 1.1 Entwicklungsumgebung" >> "$OUTPUT_FILE"
+echo "- Xcode Version: 16.3 (16E140)" >> "$OUTPUT_FILE"
+echo "- macOS Version: $(sw_vers -productVersion)" >> "$OUTPUT_FILE"
+echo "- Xcode-Projekt: hero8.xcodeproj" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
+
 # 2. Framework-Status prüfen
 echo "### 2. Framework-Status" >> "$OUTPUT_FILE"
 for framework in CoreDomain CoreInfrastructure HeroCoreData; do
@@ -74,10 +81,26 @@ cd "$PROJECT_ROOT"
 git log --pretty=format:"- %s (%cr)" -n 5 >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 
+# Automatische Statusabfrage
+echo "### 6. Automatische Statusabfrage" >> "$OUTPUT_FILE"
+echo "#### Aktive Tasks" >> "$OUTPUT_FILE"
+# Diese könnten aus einem Task-File gelesen werden, wenn vorhanden
+echo "- Dateien in Xcode referenzieren" >> "$OUTPUT_FILE"
+echo "- Framework-Abhängigkeiten konfigurieren" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
+
+# Offene Issues (optional)
+echo "#### Offene Issues" >> "$OUTPUT_FILE"
+echo "- Xcode-Referenzierung fehlender Dateien" >> "$OUTPUT_FILE"
+echo "- Build-Tests durchführen" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
+
 # Übergabenotizen
-echo "### 6. Übergabenotizen" >> "$OUTPUT_FILE"
+echo "### 7. Übergabenotizen" >> "$OUTPUT_FILE"
+echo "- WICHTIG: Diese Übergabe ist kritisch, da Chats schlagartig enden können" >> "$OUTPUT_FILE"
+echo "- WICHTIG: Regelmäßige Zwischenspeicherung durchführen" >> "$OUTPUT_FILE"
 echo "- TODO: Aktuelle Aufgaben hier eintragen" >> "$OUTPUT_FILE"
-echo "- WICHTIG: Besondere Hinweise hier dokumentieren" >> "$OUTPUT_FILE"
+echo "- TODO: Besondere Hinweise hier dokumentieren" >> "$OUTPUT_FILE"
 
 echo ""
 echo "Übergabedokumentation erstellt: $OUTPUT_FILE"
