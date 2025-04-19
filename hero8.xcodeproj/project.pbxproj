@@ -16,6 +16,8 @@
 		AFAB95612DB37E3F000A335E /* HeroCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; };
 		AFAB956B2DB37E3F000A335E /* HeroCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; };
 		AFAB956C2DB37E3F000A335E /* HeroCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB95562DB37E3F000A335E /* HeroCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFAB95922DB3AA5C000A335E /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */; };
+		AFAB95972DB3AAC0000A335E /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFAB94F62DB37DE2000A335E /* CoreDomain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = AFAB95552DB37E3F000A335E;
 			remoteInfo = HeroCoreData;
+		};
+		AFAB95942DB3AA5C000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB94F52DB37DE2000A335E;
+			remoteInfo = CoreDomain;
+		};
+		AFAB95992DB3AAC0000A335E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF0017BF2DB2B48C00112FA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFAB94F52DB37DE2000A335E;
+			remoteInfo = CoreDomain;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -218,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB95922DB3AA5C000A335E /* CoreDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAB95972DB3AAC0000A335E /* CoreDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +277,7 @@
 				AFAB95332DB37E16000A335E /* CoreInfrastructureTests */,
 				AFAB95572DB37E3F000A335E /* HeroCoreData */,
 				AFAB95662DB37E3F000A335E /* HeroCoreDataTests */,
+				AFAB95912DB3AA5C000A335E /* Frameworks */,
 				AF0017C82DB2B48C00112FA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -277,6 +296,13 @@
 				AFAB95602DB37E3F000A335E /* HeroCoreDataTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AFAB95912DB3AA5C000A335E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +463,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFAB95952DB3AA5C000A335E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AFAB95242DB37E15000A335E /* CoreInfrastructure */,
@@ -484,6 +511,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AFAB959A2DB3AAC0000A335E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AFAB95572DB37E3F000A335E /* HeroCoreData */,
@@ -777,6 +805,16 @@
 			isa = PBXTargetDependency;
 			target = AFAB95552DB37E3F000A335E /* HeroCoreData */;
 			targetProxy = AFAB95692DB37E3F000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB95952DB3AA5C000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB94F52DB37DE2000A335E /* CoreDomain */;
+			targetProxy = AFAB95942DB3AA5C000A335E /* PBXContainerItemProxy */;
+		};
+		AFAB959A2DB3AAC0000A335E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFAB94F52DB37DE2000A335E /* CoreDomain */;
+			targetProxy = AFAB95992DB3AAC0000A335E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
