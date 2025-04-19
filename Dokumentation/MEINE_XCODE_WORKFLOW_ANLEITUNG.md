@@ -14,7 +14,8 @@ Falls das nicht geht, probieren Sie:
 . e
 ```
 
-Das System extrahiert dann automatisch alle Xcode-Infos aus dem Chat.
+Beide Befehle extrahieren automatisch alle Xcode-Infos aus dem Chat.
+Das System verwendet textuelle Referenzen statt Bildverweise.
 
 ## B. Für aktuelle/neue Chat-Sessions
 
