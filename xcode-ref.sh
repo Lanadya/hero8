@@ -145,7 +145,19 @@ process_session() {
     echo "- [${session_date}](${session_date}/summary.md) - $(head -n 1 "$session_file" | sed 's/# //')" >> "$index_file"
     
     echo "Session erfolgreich in Referenz-Repository übernommen."
-    echo "Sie können die Änderungen mit './xcode-ref.sh push \"Session ${session_date} hinzugefügt\"' pushen."
+    
+    # Optionaler Auto-Push
+    if [ -f "$HERO8_DIR/.auto_push_config" ]; then
+        source "$HERO8_DIR/.auto_push_config"
+        if [ "$AUTO_MODE" != "disabled" ]; then
+            echo "Führe automatischen Push aus..."
+            "$HERO8_DIR/Scripts/secure_auto_push.sh" push "$XCODE_REF_DIR" "Session ${session_date} hinzugefügt"
+        else
+            echo "Auto-Push ist deaktiviert. Sie können die Änderungen manuell mit './xcode-ref.sh push \"Session ${session_date} hinzugefügt\"' pushen."
+        fi
+    else
+        echo "Sie können die Änderungen mit './xcode-ref.sh push \"Session ${session_date} hinzugefügt\"' pushen."
+    fi
 }
 
 # Funktion: Neuen Screenshot-Verweis erstellen
@@ -202,8 +214,11 @@ case "$1" in
     "mark-feature")
         mark_feature "$2" "$3"
         ;;
-    "push")
-        push_changes "$2"
+    "secure-push")
+        "$HERO8_DIR/Scripts/secure_auto_push.sh" push "$XCODE_REF_DIR" "$2"
+        ;;
+    "configure-auto-push")
+        "$HERO8_DIR/Scripts/secure_auto_push.sh" configure
         ;;
     *)
         echo "Xcode Reference Verwaltung aus hero8"
@@ -216,7 +231,8 @@ case "$1" in
         echo "  add-docs <pfad> <dateiname>            - Dokumentation hinzufügen"
         echo "  add-version <version>                  - Neue Version einrichten"
         echo "  status                                 - Status anzeigen"
-        echo "  push <nachricht>                       - Änderungen zu GitHub pushen"
+        echo "  secure-push <nachricht>                 - Sicherer Push mit Datenschutzfilter"
+        echo "  configure-auto-push                     - Auto-Push-Einstellungen konfigurieren"
         echo ""
         echo "Aktuelle Version: $CURRENT_VERSION"
         exit 1
