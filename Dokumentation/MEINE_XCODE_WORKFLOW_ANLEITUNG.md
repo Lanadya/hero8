@@ -40,6 +40,16 @@ Das System extrahiert dann automatisch alle Xcode-Infos aus dem Chat.
 - Alte Chats: `/Users/ninaklee/Projects/hero8/ChatExtracts/[Datum]/`
 - Neue Sessions: `/Users/ninaklee/Projects/hero8/Dokumentation/XCODE_SESSION_[timestamp].md`
 
+### 1.1 WICHTIG: Datenüberprüfung
+Vor der Übertragung ins Repository MÜSSEN Sie die extrahierten Daten prüfen:
+1. Nach persönlichen Informationen suchen (E-Mails, Namen, IDs)
+2. Strukturelle Integrität prüfen (Markdown-Format korrekt?)
+3. Referenzen verifizieren (Screenshots, Links)
+4. Inhaltliche Genauigkeit bestätigen (technisch korrekt?)
+
+Detaillierte Anleitung: `EXTRACTION_VERIFICATION_GUIDE.md`
+Praktische Beispiele: `EXTRACTION_VERIFICATION_EXAMPLE.md`
+
 ### 2. Wie übertrage ich sie ins Repository?
 ```bash
 cd /Users/ninaklee/Projects/hero8
