@@ -37,3 +37,5 @@
 Diese Screenshots dokumentieren zwei wichtige Aspekte der Xcode 16.3 Konfiguration für Test-Targets:
 1. Die optimierten Build Settings für schnelle Debug-Builds und vollständige Release-Builds
 2. Die vereinfachte Signing-Konfiguration mit automatischer Verwaltung für Test-Targets
+
+<!-- Geprüft am 2025-04-19: Alle persönlichen Daten maskiert -->

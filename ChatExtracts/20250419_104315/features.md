@@ -80,3 +80,5 @@ xcode-reference/
 - read_file, write_file, create_directory
 - xcode_build, simulator_launch
 - Artifact-basierte Versionierung
+
+<!-- Geprüft am 2025-04-19: Alle persönlichen Daten maskiert -->

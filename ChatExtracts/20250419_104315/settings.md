@@ -92,3 +92,5 @@
 3. **Signing-Vereinfachung**: Verwenden Sie automatische Signing-Verwaltung
 4. **Multi-Platform**: Aktivieren Sie Unterstützung für alle relevanten Plattformen
 5. **Debug-Erfahrung**: Optimieren Sie Debug Information Format basierend auf Build-Konfiguration
+
+<!-- Geprüft am 2025-04-19: Alle persönlichen Daten maskiert -->
