@@ -1,0 +1,17 @@
+#!/bin/bash
+h="/Users/ninaklee/Projects/hero8"
+d=$(date +%Y%m%d_%H%M%S)
+mkdir -p $h/ChatExtracts/$d
+echo "Analysiere Chat zu Xcode 16.3.
+
+1. Sammle alle Screenshots mit Beschreibungen
+2. Extrahiere Features, Build-Settings, Framework-Infos
+3. Speichere alles strukturiert in $h/ChatExtracts/$d/
+
+Format:
+- screenshots.md: Liste aller Screenshots mit Beschreibungen
+- features.md: Neue Xcode-Features
+- settings.md: Build-Settings und Konfiguration
+- issues.md: Probleme und Lösungen
+
+Schreibe in Markdown, nutze MCP."
