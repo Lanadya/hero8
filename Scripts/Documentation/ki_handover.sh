@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # ki_handover.sh - Optimiertes KI-Übergabeskript für hero8
@@ -39,6 +40,22 @@ if [ -f "$latest_file" ]; then
     - **Automatisierte Scripts aktiv: secure_auto_push.sh, autosave_project.sh**\
     \
     ' "$latest_file"
+
+# After the KRITISCHE WARNUNG section (around line 30-40 depending on your script)
+
+# Add Current Active Work status from dedicated file
+if [ -f "$DOC_DIR/Status/CURRENT_ACTIVE_WORK.md" ]; then
+    echo "" >> "$latest_file"
+    cat "$DOC_DIR/Status/CURRENT_ACTIVE_WORK.md" >> "$latest_file"
+    echo "" >> "$latest_file"
+else
+    echo "" >> "$latest_file"
+    echo "## CURRENT ACTIVE WORK: No specific active task defined" >> "$latest_file"
+    echo "" >> "$latest_file"
+    echo "Please update the current work status by editing:" >> "$latest_file"
+    echo "$DOC_DIR/Status/CURRENT_ACTIVE_WORK.md" >> "$latest_file"
+    echo "" >> "$latest_file"
+fi
     
     # Füge wichtige Verhaltensregeln für KI-Assistenten hinzu
     sed -i '' '/## Aktueller Stand/i\
