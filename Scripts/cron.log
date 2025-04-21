@@ -1,0 +1,8 @@
+[Mon Apr 21 12:30:23 CEST 2025] GIT: Starte Git-Push für hero8...
+[Mon Apr 21 12:30:23 CEST 2025] GIT: Ungesicherte Änderungen gefunden. Führe automatischen Commit durch...
+ M Scripts/autosave_project.sh
+?? Backups/hero8_backup_20250420_144537.zip
+?? Scripts/auto_git_push.sh
+?? Scripts/auto_status_snapshot.sh
+?? Scripts/cron.log
+?? hero
